@@ -6,7 +6,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "zukkey.whiskey.arcoresample"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -42,3 +42,15 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/andy.obj',
+        'default',
+        'sampledata/andy.sfa',
+        'src/main/assets/andy')
+
+sceneform.asset('sampledata/andy.obj',
+        'default',
+        'sampledata/andy.sfa',
+        'src/main/res/raw/andy')
