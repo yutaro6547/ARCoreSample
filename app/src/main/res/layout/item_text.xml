@@ -5,4 +5,4 @@
   android:textSize="24sp"
   android:textColor="@color/colorAccent"
   android:background="@android:color/background_light"
-  android:text="クリックしてね！"/>
+  android:text="BOOTHにて電子版販売中！"/>
